@@ -16,6 +16,8 @@ const App = () => {
 
   const addImage = newImageUrl => {
     if (imageList.includes(newImageUrl)) {
+      // TODO: make this error message part of the UI
+      // eslint-disable-next-line no-alert
       return alert('Image already in gallery.');
     }
     return setImageArray(oldArray => [...oldArray, newImageUrl]);

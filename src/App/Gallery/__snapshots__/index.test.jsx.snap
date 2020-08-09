@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs the expected tree when images in gallery 1`] = `
+<div
+  className="card"
+>
+  <Thumbnails
+    imageList={
+      Array [
+        "https://img.com/1",
+        "https://img.com/2",
+      ]
+    }
+    selectImage={[Function]}
+  />
+  <Stage
+    img=""
+    selectNextImage={[Function]}
+    selectPreviousImage={[Function]}
+  />
+</div>
+`;
+
+exports[`outputs the expected tree when no images in gallery 1`] = `
+<div
+  className="card"
+>
+  <div>
+    No images in gallery.
+  </div>
+</div>
+`;

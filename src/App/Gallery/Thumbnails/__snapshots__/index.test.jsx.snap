@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs the expected tree when (default) 1`] = `
+<div
+  className="thumbnails"
+>
+  <span
+    key="https://img.com/1"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <img
+      alt="Thumbnail 0"
+      className="thumbnail"
+      src="https://img.com/1"
+    />
+  </span>
+  <span
+    key="https://img.com/2"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <img
+      alt="Thumbnail 1"
+      className="thumbnail"
+      src="https://img.com/2"
+    />
+  </span>
+</div>
+`;

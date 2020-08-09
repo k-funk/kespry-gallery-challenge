@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs the expected tree when (default) 1`] = `
+<div
+  className="app"
+>
+  <h1>
+    Image Gallery
+  </h1>
+  <div
+    className="flex-grid"
+  >
+    <div
+      className="col"
+    >
+      <AddImages
+        addImage={[Function]}
+      />
+      <button
+        className="btn-link"
+        onClick={[Function]}
+        type="button"
+      >
+        Fill Gallery
+      </button>
+    </div>
+    <div
+      className="col"
+    >
+      <Gallery
+        imageList={
+          Array [
+            "https://picsum.photos/seed/1/450/300",
+            "https://picsum.photos/seed/2/450/300",
+            "https://picsum.photos/seed/3/450/300",
+            "https://picsum.photos/seed/4/450/300",
+            "https://picsum.photos/seed/5/450/300",
+            "https://picsum.photos/seed/6/450/300",
+            "https://picsum.photos/seed/7/450/300",
+            "https://picsum.photos/seed/8/450/300",
+            "https://picsum.photos/seed/9/450/300",
+            "https://picsum.photos/seed/10/450/300",
+            "https://picsum.photos/seed/11/450/300",
+            "https://picsum.photos/seed/12/450/300",
+            "https://picsum.photos/seed/13/450/300",
+            "https://picsum.photos/seed/14/450/300",
+            "https://picsum.photos/seed/15/450/300",
+            "https://picsum.photos/seed/16/450/300",
+            "https://picsum.photos/seed/17/450/300",
+            "https://picsum.photos/seed/18/450/300",
+            "https://picsum.photos/seed/19/450/300",
+            "https://picsum.photos/seed/20/450/300",
+            "https://picsum.photos/seed/21/450/300",
+            "https://picsum.photos/seed/22/450/300",
+            "https://picsum.photos/seed/23/450/300",
+            "https://picsum.photos/seed/24/450/300",
+            "https://picsum.photos/seed/25/450/300",
+            "https://picsum.photos/seed/26/450/300",
+            "https://picsum.photos/seed/27/450/300",
+          ]
+        }
+      />
+      <button
+        className="btn-link"
+        onClick={[Function]}
+        type="button"
+      >
+        Empty Gallery
+      </button>
+    </div>
+  </div>
+</div>
+`;

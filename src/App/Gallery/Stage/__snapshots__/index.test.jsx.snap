@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs the expected tree when no img 1`] = `""`;
+
+exports[`outputs the expected tree when with an img 1`] = `
+<div
+  className="stage"
+>
+  <div
+    className="select-image previous"
+    onClick={[MockFunction]}
+    onKeyUp={[MockFunction]}
+    role="button"
+    tabIndex={0}
+  >
+    ❮
+  </div>
+  <div
+    className="select-image next"
+    onClick={[MockFunction]}
+    onKeyUp={[MockFunction]}
+    role="button"
+    tabIndex={0}
+  >
+    ❯
+  </div>
+  <img
+    alt="https://img.com/1"
+    src="https://img.com/1"
+  />
+</div>
+`;

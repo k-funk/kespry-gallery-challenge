@@ -121,11 +121,12 @@ h1, h2, h3, h4, h5, h6, p, figure, pre {
 }
 .col {
   flex: 1;
+  margin-bottom: 3rem;
   padding-left: var(--grid-gutter);
   padding-right: var(--grid-gutter);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .flex-grid {
     display: block;
   }

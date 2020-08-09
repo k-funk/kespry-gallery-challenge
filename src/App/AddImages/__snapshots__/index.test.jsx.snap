@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs the expected tree when (default) 1`] = `
+<div
+  className="card"
+>
+  <h4>
+    Add Image URLs
+  </h4>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="https://picsum.photos/seed/picsum/450/300"
+      type="url"
+      value=""
+    />
+    <button
+      className="btn"
+      type="submit"
+    >
+      Add Image
+    </button>
+  </form>
+</div>
+`;

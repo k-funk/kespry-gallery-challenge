@@ -1,4 +1,5 @@
 .app {
   margin: 2.5rem auto;
-  width: 1024px;
+  max-width: 1200px;
+  padding: 0 15px;
 }
