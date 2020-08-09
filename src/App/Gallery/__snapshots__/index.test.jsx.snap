@@ -11,10 +11,10 @@ exports[`outputs the expected tree when images in gallery 1`] = `
         "https://img.com/2",
       ]
     }
-    selectImage={[Function]}
+    selectImage={[MockFunction]}
   />
   <Stage
-    img=""
+    img="https://img.com/1"
     selectNextImage={[Function]}
     selectPreviousImage={[Function]}
   />

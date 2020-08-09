@@ -13,6 +13,7 @@ export const SAMPLE_GALLERY = Array.from(
 
 const App = () => {
   const [imageList, setImageArray] = useState(SAMPLE_GALLERY);
+  const [stageImg, setStageImg] = useState('');
 
   const addImage = newImageUrl => {
     if (imageList.includes(newImageUrl)) {
@@ -25,10 +26,12 @@ const App = () => {
 
   const fillGallery = () => {
     setImageArray([...SAMPLE_GALLERY]);
+    setStageImg('');
   };
 
   const emptyGallery = () => {
     setImageArray([]);
+    setStageImg('');
   };
 
   return (
@@ -47,7 +50,11 @@ const App = () => {
         </div>
 
         <div className="col">
-          <Gallery imageList={imageList} />
+          <Gallery
+            imageList={imageList}
+            stageImg={stageImg}
+            setStageImg={setStageImg}
+          />
           <button className="btn-link" onClick={emptyGallery} type="button">
             Empty Gallery
           </button>

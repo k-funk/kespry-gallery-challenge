@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { PropTypes as T } from 'prop-types';
 import Thumbnails from './Thumbnails';
 import Stage from './Stage';
 
 
-const Gallery = ({ imageList }) => {
-  const [stageImg, setStageImg] = useState('');
-
+const Gallery = ({ imageList, stageImg, setStageImg }) => {
   const selectNextImage = () => {
     const currentIdx = imageList.indexOf(stageImg);
     const nextIdx = currentIdx >= imageList.length - 1 ? 0 : currentIdx + 1;
@@ -39,6 +37,8 @@ const Gallery = ({ imageList }) => {
 
 Gallery.propTypes = {
   imageList: T.arrayOf(T.string).isRequired,
+  stageImg: T.string,
+  setStageImg: T.func.isRequired,
 };
 
 export default Gallery;

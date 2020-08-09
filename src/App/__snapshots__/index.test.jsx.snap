@@ -59,6 +59,8 @@ exports[`outputs the expected tree when (default) 1`] = `
             "https://picsum.photos/seed/27/450/300",
           ]
         }
+        setStageImg={[Function]}
+        stageImg=""
       />
       <button
         className="btn-link"
