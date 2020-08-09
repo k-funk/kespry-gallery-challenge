@@ -1,0 +1,39 @@
+.stage {
+  position: relative;
+}
+
+.stage .select-image {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 40px;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  transition: all var(--transition-time);
+  width: 75px;
+}
+
+.stage .select-image:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.stage .select-image.previous {
+  left: 0;
+}
+
+.stage .select-image.next {
+  right: 0;
+}
+
+.stage img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.stage img::selection {
+  background: transparent;
+}

@@ -1,5 +1,16 @@
 # Image Gallery
 
+## Notes to Kespry
+
+FIXME
+
+#### Planned Changes
+
+FIXME
+
+
+## Instructions from Kespry
+
 A template built with create-react-app has been provided to you. You can find instructions for running the app in the [environment-instructions](environment-instructions.md) file.
 
 This challenge is intended to take two hours. Focus on writing clean, readable, extensible code.

@@ -11,16 +11,6 @@
     "browser": true,
   },
 
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": "webpack/webpack.config.dev.js"
-      }
-    },
-    "import/extensions": ["", ".js", ".ejs", ".json", ".yml", ".jsx"],
-    "import/ignore": [".ejs$", ".yml$", ".jsx"]
-  },
-
   "plugins": [
     "jest",
   ],

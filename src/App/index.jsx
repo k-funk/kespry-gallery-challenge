@@ -1,11 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import AddImages from './AddImages';
+import Gallery from './Gallery';
+
 import './style.css';
 
 
-const Index = () => (
-  <div className="App">
-    Hello world!
-  </div>
+export const SAMPLE_GALLERY = Array.from(
+  Array(27),
+  (_, i) => `https://picsum.photos/seed/${i + 1}/450/300`,
 );
 
-export default Index;
+const App = () => {
+  const [imageList, setImageArray] = useState(SAMPLE_GALLERY);
+
+  const addImage = newImageUrl => {
+    if (imageList.includes(newImageUrl)) {
+      return alert('Image already in gallery.');
+    }
+    return setImageArray(oldArray => [...oldArray, newImageUrl]);
+  };
+
+  const fillGallery = () => {
+    setImageArray([...SAMPLE_GALLERY]);
+  };
+
+  const emptyGallery = () => {
+    setImageArray([]);
+  };
+
+  return (
+    <div className="app">
+      <h1>Image Gallery</h1>
+
+      <div className="flex-grid">
+        <div className="col">
+          <AddImages
+            addImage={addImage}
+          />
+
+          <button className="btn-link" onClick={fillGallery} type="button">
+            Fill Gallery
+          </button>
+        </div>
+
+        <div className="col">
+          <Gallery imageList={imageList} />
+          <button className="btn-link" onClick={emptyGallery} type="button">
+            Empty Gallery
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;

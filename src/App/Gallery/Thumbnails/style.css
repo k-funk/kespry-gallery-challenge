@@ -1,0 +1,17 @@
+.thumbnail {
+  --thumbnail-size: 50px;
+
+  cursor: pointer;
+  opacity: 1;
+  padding: 2px;
+  height: var(--thumbnail-size);
+  transition: opacity var(--transition-time);
+  width: var(--thumbnail-size);
+}
+.thumbnail:hover {
+  opacity: .8;
+}
+
+.thumbnail::selection {
+  background: transparent;
+}
